@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <img src="./images/logo.svg" alt="" class="logo">
+      <nav class="navigation">
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <div class="account">
+      <button class="cart-button cart">
+        <img class="cart-button-img cart" src="./images/icon-cart.svg" alt="cart">
+      </button>
+      <div class="cart-counter hidden">
+        0
+      </div>
+      <div class="cart cart-popup hidden">
+        <span class="cart cart-popup__title"><b class="cart">Cart</b></span>
+        <div class="cart basket">
+          <div class="cart basket-content-empty hidden">
+            <b class="cart">Your cart is empty!</b>
+          </div>
+          <div class="cart basket-content-filled hidden">
+
+          </div>
+          <!--Place for products-->
+        </div>
+      </div>
+      <button class="avatar">
+        <img src="./images/image-avatar.png" alt="avatar">
+      </button>
+    </div>
+    <div class="bottom-border"></div>
+  </header>
+  <main class="main-container">
+    <section class="gallery">
+      <div class="big-picture">
+        <img src="./images/image-product-1.jpg" alt="" class="big-picture__img">
+      </div>
+      <div class="thumbnails-container">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="" class="thumbnail active-picture">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="" class="thumbnail">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="" class="thumbnail">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="" class="thumbnail">
+      </div>
+    </section>
+    <section class="details">
+      <div class="detials-text">
+        <span class="company"><b>SNEAKER COMPANY</b></span>
+        <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+        <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="price">
+          <span class="price-value" data-price="125.00"><b>$125.00</b></span>
+          <span class="discount"><b>50%</b></span><br>
+          <span class="previous-price"><b>$250.00</b></span>
+        </div>
+      </div>
+      <div class="shop-buttons">
+        <div class="counter">
+          <button class="minus"><b>-</b></button>
+          <span class="count"><b>0</b></span>
+          <button class="plus"><b>+</b></button>
+        </div>
+        <button class="add-to-cart">
+          <img src="./images/icon-cart.svg"/>
+          <span><b>Add to cart</b></span>
+        </button>
+      </div>
+
+    </section>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
